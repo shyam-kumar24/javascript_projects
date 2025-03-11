@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.loading-text {
+    display: none;
+}
+
+.loading-text.show{
+    display: block;
+}
+
+.loading-text.hide {
+    display: none;
+}
+
