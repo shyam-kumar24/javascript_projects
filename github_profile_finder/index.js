@@ -16,6 +16,11 @@ function removeLoader(){
 }
 
 async function fetchGithubProfileDetails(){
+
+    if(searchInput.value === ''){
+        return
+    }
+
     showLoader()
     const response = await fetch(`${BASE_URL}${searchInput.value}`)
     const result = await response.json()
